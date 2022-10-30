@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gestion de budget</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <div class="main-page">
+    <h1 class="main-title">gestion budget</h1>
+    <div class="addbudget">
+      <button class="add-budget" id="budget">ajouter budget</button>
+    </div>
+    <!-- Modal content -->
+    <div id="myModal3" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>ajouter budget</h3><br>
+      <label for="label_add_budget">budget :</label>
+      <input type="text" id="label_add_budget"><br><br>
+      <button id="ajouterbudget">ajouter</button>
+    </div>
+    </div>
+
+      <header>
+      <div class="budget">
+        <label for="label1_add_budget">Budget</label>
+        <p class="label1" id="label1_add_budget">5000</p>
+      </div>
+      <div class="budget">
+        <label for="label1_add_depense">Depenses</label>
+        <p class="label1" id="label1_add_depense">4000</p>
+      </div>
+      <div class="budget">
+        <label for="label1_add_solde">soldes</label>
+        <p class="label1" id="label1_add_solde">1000</p>
+      </div>
+      <div id="myModal1" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close1">&times;</span>
+          <h3>ajouter depenses</h3>
+          <label for="expense_title">titre</label>
+          <input type="text" id="expense_title"><br><br>
+          <label for="expense_prix">Montant</label>
+          <input type="text" id="expense_prix"><br><br>
+          <button id="btn_add_depense">ajouter</button>
+        </div>
+
+      </div>
+
+    </header>
+    <section>
+      <br>
+      <u>
+        <h5 class="liste1">Liste des depenses
+          <button id="add-expense">Ajouterdepense</button>
+        </h5>
+      </u>
+      <br>
+      <br>
+      <div>
+        <table class="table1">
+          <tr>
+            <th>Titre</th>
+            <th>Montant</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>Nourriture</td>
+            <td>3500</td>
+            <td class="modifier"><button id="edit-0">Modifier</button>
+              <button id="delete-0">Supprimer</button>
+
+            </td>
+          </tr>
+          <tr>
+            <td>Cafe</td>
+            <td>500</td>
+            <td class="rename"><button> Modifier</button>
+              <button>Supprimer</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section>
+      <br>
+      <br>
+      <u>
+        <h5 class="liste1">Liste des revenues
+          <button id="add-income">Ajouterrevenu</button>
+        </h5>
+
+      </u>
+       <!-- Trigger/Open The Modal -->
+      <br>
+      <div id="myModal2" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close2">&times;</span>
+          <h3>ajouter revenu</h3>
+          <label for="revenu_titre">titre</label>
+          <input type="text" id="revenu_titre"><br><br>
+          <label for="revenu_prix">Montant</label>
+          <input type="text" id="revenu_prix"><br><br>
+          <button id="add-revenu">ajouter</button>
+        </div>
+   
+      </div>
+      <form>
+        <table class="table2" id="tableau1">
+          <tr>
+            <th>Titre</th>
+            <th>Montant</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>Salaire</td>
+            <td>300000</td>
+            <td class="delet"><button id="edit1">Modifier</button>
+              <button id="delete1">Supprimer</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Bonus</td>
+            <td>10000</td>
+            <td class="addbtn"><button id="edit2"> Modifier</button>
+              <button id="delete2">Supprimer</button>
+            </td>
+          </tr>
+          <tbody></tbody>
+        </table>
+      </form>
+       
+      </div>
+    </section>
+    <section>
+
+    </section>
+ 
+    <template id="expense-row">
+      <tr>
+        <td class="table1"></td>
+        <td class="table1"></td>
+        <td class="table1">
+          <button class="edit_row">Modifier</button>
+          <button class="delete_row">Supprimer</button>
+        </td>
+      </tr>
+      <tbody></tbody>
+    </template>
+    
+  </div>
+  </div>
+  <script src="/js/scripts.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

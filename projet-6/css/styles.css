@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --green:#43aa8b;
+    --red:#bc4749;
+}
+body{
+    background-color: #fff;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-title{
+    padding-top: 0;
+    margin: 10;
+    color: midnightblue;
+    text-align: center;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    color: midnightblue;
+    padding: 20px;
+}
+.label1{
+    border: 5px solid midnightblue;
+    background-color: midnightblue;
+    color: white;
+    border-radius: 7px;
+    font: bold;
+
+}
+.btn1 {
+    text-align: center;
+    margin-top: 20px;
+}
+.liste1{
+    text-align: center;
+    color: midnightblue;
+    margin: 1px;
+}
+.table1{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table2{
+  width: 100%;
+  border-collapse: collapse;
+}
+th,td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid midnightblue;
+}
+th {
+    background-color:midnightblue;
+    color: #fff;
+}
+button {
+    font-size: 20px;
+    border-radius: 12px;
+    margin-top: 5px !important;
+    color: #fff;
+    background-color: midnightblue;
+    transition: all 0.3s ease-out;
+}
+button:hover{
+    background: #fff;
+    color: midnightblue;
+}
+td {
+    color:midnightblue;
+}
+.main-page{
+    border: 1px solid midnightblue;
+    padding: 0;
+    margin: 0;
+}
+.liste1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .add-budget{
+    font-size: 20px;
+    border-radius: 12px;
+    margin-top: 5px !important;
+    color: #fff;
+    background-color: green;
+    transition: all 0.3s ease-out;
+
+  }
+  button:hover{
+    background: #fff;
+    color: green;
+}
+
+/* creation modal
+ /* The Modal (background) */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close1 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close1:hover,
+  .close1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } 
+
+  .close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } 
